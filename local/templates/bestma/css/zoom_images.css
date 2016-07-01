@@ -1,0 +1,26 @@
+@charset "utf-8";
+table.items_list tbody td.first div.w_zoom_img,
+table.cart_table td.forZoom div.w_zoom_img {
+    position: relative;
+    margin: 0px auto;
+    z-index: 100;
+}
+
+table.items_list tbody td.first div.w_zoom_img a,
+table.cart_table td.forZoom div.w_zoom_img a{
+    display: block;
+    left: 0;
+    overflow: hidden;
+    position: relative;
+    top: 0px;
+}
+
+table.items_list tbody td.first div.w_zoom_img a.bgWhite,
+table.cart_table td.forZoom div.w_zoom_img a.bgWhite {
+    background-color: #ffffff;
+}
+
+table.items_list tbody td.first div.w_zoom_img a.border,
+table.cart_table td.forZoom div.w_zoom_img a.border {
+    border: 1px solid #d0d0d0 !important;
+}
