@@ -1,0 +1,99 @@
+a.search-page-params {
+    border-bottom: 1px dashed blue;
+    text-decoration: none;
+}
+div.search-page-params {
+    margin-top: 6px;
+}
+.search-item-rate {font-size: 11px;}
+
+div.content div.search_form {
+    /*background-image: url("images/bg_form.png");*/
+    /*margin-top: -17px;*/
+    padding: 16px 36px;
+    /*border-bottom-right-radius: 0px !important;*/
+    /*border-bottom-left-radius: 0px !important;*/
+    /*box-shadow: -5px -5px 5px 0 rgba(0, 0, 0, 0.1) inset;*/
+}
+
+div.content div.search_form div.w_input_field {
+    background-color: #dfdfdf;
+    border-top: 1px solid #626262;
+    border-left: 1px solid #626262;
+    box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.40) inset;
+    padding: 6px 8px;
+    overflow: hidden;
+    float: left;
+    margin-right: 20px;
+    margin-top: 6px;
+    margin-left: 4px;
+}
+
+div.content div.search_form div.w_input_field input {
+    height: 16px;
+    font-size: 14px;
+    border: 0px;
+    display: block;
+    background: transparent;
+    color: #353D4A;
+    font-weight: bold;
+    resize: none;
+}
+
+div.content div.search_form div.w_search_submit input[type='submit']{
+    background: transparent;
+    color: transparent;
+    width: 100%;
+    height: 31px;
+    border: 0px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    cursor: pointer;
+    margin: 0px !important;
+}
+
+div.content div.search_form div.w_search_submit {
+    display: block;
+    float: left;
+    height: 29px;
+    line-height: 31px;
+    position: relative;
+    background-color: #1798CE;
+    font-size: 14px;
+    font-weight: bold;
+    text-shadow: 0 -1px 0 #888888;
+    text-transform: uppercase;
+    color: #E6E6E6;
+    box-shadow: -1px -1px 1px 0 rgba(0, 0, 0, 0.40) inset;
+    padding: 0px 10px;
+    background-image: url("images/header_menu_bg_hover.png");
+    overflow: hidden;
+    margin-top: 7px;
+}
+
+div.content div.search_form div.w_search_submit:hover {
+    text-decoration: underline;
+}
+
+div.content div.search_form div.w_input_field,
+div.content div.search_form div.w_search_submit {
+    border-radius: 8px; 
+}
+
+div.content div.search_form form.search {
+    display: block;
+    margin: 0 -12px;
+    overflow: hidden;
+    width: 560px;
+}
+
+div.content div.search_form  form.search input[name='q'] {
+   width: 138px;
+   padding: 0px;
+}
+
+div.content div.white_block.search p {
+    margin-left: 0px;
+    margin-right: 0px;
+}

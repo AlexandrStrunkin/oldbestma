@@ -1,0 +1,24 @@
+@charset "utf-8";
+div.content div.white_block div.w_content {
+    padding: 0px 27px 0px 24px;
+    width: 590px;
+    line-height: 18px;
+    font-size: 11px;
+}
+
+.t_color_lightgray {
+    color: #9d9ba8 !important;
+}
+
+div.w_content ul.list li {
+    color: #4f4d55;
+    margin: 0px 0px 0px 11px;
+}
+
+div.content div.white_block div.about_image {
+    background-image: url("../images/about/about_image.png");
+    background-position: right 24px top 0px;
+    background-repeat: no-repeat;
+    height: 73px;
+    margin-bottom: -17px;
+}

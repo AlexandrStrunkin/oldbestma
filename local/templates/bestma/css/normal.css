@@ -1,0 +1,21 @@
+@charset "utf-8";
+.normal_view_css p {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.normal_view_css h1              { font-size: 2em; margin: .67em 0 }
+.normal_view_css h2              { font-size: 1.5em; margin: .83em 0 }
+.normal_view_css h3              { font-size: 1.17em; margin: 1em 0 }
+.normal_view_css h4              { margin: 1.33em 0 }
+.normal_view_css h5              { font-size: .83em; line-height: 1.17em; margin: 1.67em 0 }
+.normal_view_css h6              { font-size: .67em; margin: 2.33em 0 }
+
+.normal_view_css h1,
+.normal_view_css h2,
+.normal_view_css h3,
+.normal_view_css h4,
+.normal_view_css h5,
+.normal_view_css h6,
+.normal_view_css b,
+.normal_view_css strong { font-weight: bolder }

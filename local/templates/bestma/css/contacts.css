@@ -1,0 +1,84 @@
+@charset "utf-8";
+div.content div.white_block div.w_contacts {
+    margin: 31px 24px 0px;
+    overflow: hidden;
+}
+
+div.content div.white_block div.w_form {
+     margin: 0px 24px 53px;
+}
+
+div.content div.white_block div.w_contacts ul.contacts_list,
+div.content div.white_block div.w_contacts div.map {
+    float: left;
+    overflow: hidden;
+}
+
+div.content div.white_block div.w_contacts ul.contacts_list {
+    width: 287px;
+    margin: -20px 0px;
+}
+
+div.content div.white_block div.w_contacts div.map {
+    width: 316px;
+    height: 246px;
+}
+
+div.w_contacts ul.contacts_list li {
+    padding-left: 43px;
+    margin: 20px 0;
+    background-position: left top;
+    background-repeat: no-repeat;
+    font-size: 12px;
+    line-height: 14px;
+    min-height: 34px;
+    color: #606875;
+}
+
+div.w_contacts ul.contacts_list li strong {
+    font-weight: bold;
+}
+
+div.w_contacts ul.contacts_list li.phone {
+    background-image: url('../images/contacts/phone_icon.png');
+}
+
+div.w_contacts ul.contacts_list li.mail {
+    background-image: url('../images/contacts/mail_icon.png');
+}
+
+div.w_contacts ul.contacts_list li.l_address {
+    background-image: url('../images/contacts/l_address_icon.png');
+}
+
+div.w_contacts ul.contacts_list li.office_address {
+    background-image: url('../images/contacts/office_address_icon.png');
+}
+
+div.content div.white_block div.w_form a.gray_button.callback {
+    float: right;
+    padding: 0px;
+    height: 32px;
+    line-height: 32px;
+    color: #ffffff;
+    background-image: url('../images/contacts/callback_button.png');
+    box-shadow: 2px 2px 4px 0 rgba(0, 0, 0, 0.63);
+}
+
+div.content div.white_block div.w_form a.gray_button.callback span {
+    padding-left: 26px;
+    padding-right: 10px;
+    display: block;
+    background-image: url('../images/contacts/callback_icon.png');
+    background-repeat: no-repeat;
+    background-position: 9px center;
+    cursor: pointer;
+}
+
+div.content div.white_block div.contacts_image {
+    background-image: url("../images/contacts/contacts_image.png");
+    background-position: top right 28px;
+    background-repeat: no-repeat;
+    height: 93px;
+    margin-bottom: -17px;
+}

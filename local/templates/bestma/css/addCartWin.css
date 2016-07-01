@@ -1,0 +1,75 @@
+@charset "utf-8";
+div.w_add_to_cart {
+    background-color: #757D8A;
+    border: 1px solid #757D8A;
+    border-radius: 10px;
+    box-shadow: 0 0 20px #000000;
+    color: #000000;
+    font-family: 'Trebuchet MS',sans-serif;
+    font-size: 24px;
+    left: 50%;
+    margin-left: -271.5px;
+    margin-top: -138.5px;
+    overflow: hidden;
+    padding: 10px;
+    position: fixed;
+    top: 50%;
+    width: 543px;
+    z-index: 100510;
+    display: none;
+}
+div.w_add_to_cart div.image, div.w_add_to_cart div.inf {
+    float: left;
+}
+div.w_add_to_cart div.image {
+    width: 195px;
+    padding: 10px;
+}
+div.w_add_to_cart div.image img {
+    width: 100%;
+}
+div.w_add_to_cart div.inf {
+    margin-left: 6px;
+    padding-bottom: 165px;
+    padding-top: 5px;
+    width: 320px;
+}
+div.w_add_to_cart div.inf div.red {
+    color: #9C0808;
+    margin-bottom: 20px;
+}
+div.w_add_to_cart div.wrapp_inf {
+    background: none repeat scroll 0 0 #FFFFFF;
+    border-radius: 10px;
+    box-shadow: 0 0 3px #000000 inset;
+    overflow: hidden;
+    position: relative;
+}
+div.w_add_to_cart a.button_order {
+    background-image: url("../images/addToCart/order.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-radius: 57px;
+    bottom: 19px;
+    display: block;
+    height: 114px;
+    position: absolute;
+    right: 124px;
+    width: 114px;
+}
+div.w_add_to_cart div.wrapp_inf a.button_order:active {
+    height: 112px;
+    width: 112px;
+}
+div.w_add_to_cart div.wrapp_inf a.continue {
+    bottom: 15px;
+    color: #333333;
+    font-size: 14px;
+    position: absolute;
+    right: 9px;
+    text-decoration: underline;
+}
+
+div.w_add_to_cart div.wrapp_inf a.continue:hover {
+    color: #2D9ED1;
+}

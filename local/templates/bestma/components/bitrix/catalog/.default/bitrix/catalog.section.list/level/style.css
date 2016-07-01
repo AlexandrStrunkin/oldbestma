@@ -1,0 +1,6 @@
+.wrapp_category{
+    overflow: hidden;
+}
+.wrapp_category ul li{
+    clear: left;
+}

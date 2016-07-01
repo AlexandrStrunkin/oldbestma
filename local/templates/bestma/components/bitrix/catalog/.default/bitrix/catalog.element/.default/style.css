@@ -1,0 +1,8 @@
+.catalog-price {
+	 color:red;
+}
+.imgs_wrapp .check_news{
+    position: absolute;
+    z-index: 2;
+    right: 16px;
+}

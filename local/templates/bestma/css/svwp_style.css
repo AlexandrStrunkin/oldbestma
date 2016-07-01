@@ -1,0 +1,127 @@
+.svwp {width: 50px; height: 20px; background: transparent;} /*preloader stuff. do not modify!*/
+.svwp ul{position: relative; left: -999em;}/*preloader stuff. do not modify!*/
+.slideViewer { 
+    position: relative;
+    overflow: hidden; 
+    margin: 0;
+    padding: 0;
+    background: transparent;
+}
+.slideViewer ul {  /*your list of images*/
+    position: relative;
+    left: 0;
+    top: 0;
+    width: 1%;
+    list-style-type: none;
+    margin: 0; 
+    padding: 0;
+}
+.slideViewer ul li {
+    float:left;
+    display: block;
+    height: 230px;
+    width: 263px;
+    text-align: center;
+}
+
+.slideViewer ul li {
+    margin: auto;
+    max-height: 230px;
+    max-width: 263px;
+    overflow: hidden;
+}
+
+.slideViewer ul li img {
+    margin: auto;
+    max-height: 230px;
+    max-width: 230px;
+}
+
+/*typographic info*/
+.slideViewer span.typo{ 
+    display: none !important;
+}
+
+.thumbSlider { /*the thumbnails slider*/
+    overflow: hidden;
+    width: 196px !important;
+    height: 78px !important;
+    background: transparent;
+    margin-top: 45px !important;
+}
+.thumbSlider ul { 
+    list-style-type: none;
+    margin: -1px -9.5px !important;
+    padding: 0;
+    height: 78px !important;
+}
+.thumbSlider ul li{ 
+    float:left;
+    margin: 1px 9.5px !important;
+    height: 76px !important;
+    width: 53px !important;
+}
+.thumbSlider a{
+    color: #fff;
+    text-decoration: none;
+}
+.thumbSlider a img{
+    border: 0;
+    display: block;
+    padding: 0;
+    max-width: 53px !important;
+    max-height: 78px !important;
+}
+.thumbSlider p.tmbrdr { /* the border above -not around- each thumb */
+    /* width, height and top values are dynamically added by the script. Do not modify. */
+    position:relative; 
+    left: 0;
+    font-size: 0.01em;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    display: none;
+}
+
+a.left, a.right { /*the left and right buttons (links)*/
+    background: transparent; /* could be any color  */
+    width: 17px !important;
+    height: 60px !important;
+    margin: 0px !important;
+    overflow: hidden;
+    position: absolute;
+}
+
+a.left {
+    background-image: url('../images/b_left.png') !important;
+    background-repeat: no-repeat !important;
+    background-position: left center !important;
+    bottom: 9px;
+    left: 0px;
+}
+
+a.right {
+    background-image: url('../images/b_right.png') !important;
+    background-repeat: no-repeat !important;
+    background-position: right center !important;
+    bottom: 9px;
+    right: -2px;
+}
+
+a.left span, a.right span{
+
+}
+
+a.left span {}
+
+a.left img, a.right img{
+    border: 0;
+}
+a.l_dis, a.r_dis {
+    background: transparent !important; /* ALWAYS leave transparent. this is the 'disabled' state of the link !  */
+    cursor: default;
+}
+a.l_dis span, a.r_dis span {
+    visibility: hidden;
+}
+a:focus {outline:none;}
