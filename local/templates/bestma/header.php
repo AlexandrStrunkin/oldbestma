@@ -31,6 +31,7 @@
         $APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH . "/js/js.js");
         $APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH . "/js/zoom_img.js");
         $APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH . "/js/addToCart.js");
+        $APPLICATION->AddHeadScript(SITE_TEMPLATE_PATH . "/js/jquery.maskedinput.min.js");
     ?>
 </head>
 
@@ -91,7 +92,7 @@
                             Как Вас зовут?
                         </div>
                         <div class="w_input_field name">
-                            <input type="text" name="form_text_7" value="" />
+                            <input type="text"  name="form_text_7" value="" />
                         </div>
                     </div>
                     <div class="w_input">
@@ -99,7 +100,7 @@
                             Вопрос или комментарий
                         </div>
                         <div class="w_input_field textarea">
-                            <textarea class="question" name="form_text_8" cols="1" rows="1"></textarea>
+                            <textarea class="question" placeholder="Например: Как начать с Вами сотрудничать" name="form_text_8" cols="1" rows="1"></textarea>
                         </div>
                     </div>
                 </div>
@@ -130,7 +131,7 @@
                         <div class="b_fields">
                             <div class="w_input">
                                 <div class="w_input_field textarea numb">
-                                    <textarea class="numb" name="form_text_9" cols="1" rows="1"></textarea>
+                                    <textarea class="numb" id="phone" placeholder="Укажите Ваш номер телефона" name="form_text_9" cols="1" rows="1"></textarea>
                                 </div>
                             </div>
                         </div>
@@ -312,11 +313,13 @@
 			1 => "",
 		),
 		"SECTION_URL" => "",
-		"CACHE_TYPE" => "N",
+		"CACHE_TYPE" => "A",
 		"CACHE_TIME" => "36000000",
 		"CACHE_GROUPS" => "N",
 		"ADD_SECTIONS_CHAIN" => "Y",
-		"COMPONENT_TEMPLATE" => "left_section_list"
+		"COMPONENT_TEMPLATE" => "left_section_list",
+		"COMPOSITE_FRAME_MODE" => "A",
+		"COMPOSITE_FRAME_TYPE" => "AUTO"
 	),
 	false
 );

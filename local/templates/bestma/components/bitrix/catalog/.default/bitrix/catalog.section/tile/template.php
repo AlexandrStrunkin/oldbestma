@@ -7,7 +7,7 @@
   print_r($arResult);
   echo "</pre>";
   // */
-?>
+?>       
 <ul class="prod_tile items_pic">
     <? foreach ($arResult["ITEMS"] as $cell => $arElement): ?>
         <?

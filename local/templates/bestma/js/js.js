@@ -209,3 +209,7 @@ $(document).ready(function() {
         $(radio).prop({"checked": true});
     });
 });
+
+jQuery(function($){
+   $("#phone").mask("+7(999) 999-9999");
+   });

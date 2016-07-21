@@ -132,25 +132,31 @@ $ELEMENT_CNT = 30;
         $date_new = date('Y.m.d G:i:s', $t); # 10-Aug-2004
         arshow($date_new,true);
     } */
+  $curr_date = mktime(date('d.m.Y G:i:s'));
+  $date_create_date = $curr_date - 1209600;
+  $arrFilter[">DATE_CREATE"] = date('d.m.Y G:i:s', $date_create_date);
 ?> 
 
 <div> <?$APPLICATION->IncludeComponent(
-	"svc:catalog.section",
-	"view", //$view
-	Array(
+	"svc:catalog.section", 
+	"view", 
+	array(
 		"AJAX_MODE" => "N",
 		"IBLOCK_TYPE" => "catalog",
 		"IBLOCK_ID" => "3",
-		"SECTION_ID" => $_REQUEST["SECTION_ID"],
+		"SECTION_ID" => "",
 		"SECTION_CODE" => "",
-		"SECTION_USER_FIELDS" => array(),
+		"SECTION_USER_FIELDS" => array(
+			0 => "",
+			1 => "",
+		),
 		"ELEMENT_SORT_FIELD" => $sort,
 		"ELEMENT_SORT_ORDER" => $sortOrder,
 		"ELEMENT_SORT_FIELD2" => $arParams["ELEMENT_SORT_FIELD2"],
 		"ELEMENT_SORT_ORDER2" => $arParams["ELEMENT_SORT_ORDER2"],
 		"FILTER_NAME" => "arrFilter",
 		"INCLUDE_SUBSECTIONS" => "Y",
-		"SHOW_ALL_WO_SECTION" => "N",
+		"SHOW_ALL_WO_SECTION" => "Y",
 		"SECTION_URL" => "",
 		"DETAIL_URL" => "#SECTION_CODE#/#ELEMENT_CODE#/",
 		"SECTION_ID_VARIABLE" => "SECTION_ID",
@@ -165,9 +171,20 @@ $ELEMENT_CNT = 30;
 		"SET_STATUS_404" => "N",
 		"PAGE_ELEMENT_COUNT" => $ELEMENT_CNT,
 		"LINE_ELEMENT_COUNT" => "9",
-		"PROPERTY_CODE" => array("ARTICLE","CML2_ARTICLE","CML2_SIMILAR_GOODS","CML2_TRAITS","CML2_ATTRIBUTES"),
+		"PROPERTY_CODE" => array(
+			0 => "ARTICLE",
+			1 => "CML2_ARTICLE",
+			2 => "CML2_SIMILAR_GOODS",
+			3 => "CML2_TRAITS",
+			4 => "CML2_ATTRIBUTES",
+			5 => "",
+		),
 		"OFFERS_LIMIT" => "5",
-		"PRICE_CODE" => array("PRICE_WHS_1","PRICE_WHS_2","PRICE_WHS_3"),
+		"PRICE_CODE" => array(
+			0 => "PRICE_WHS_1",
+			1 => "PRICE_WHS_2",
+			2 => "PRICE_WHS_3",
+		),
 		"USE_PRICE_COUNT" => "N",
 		"SHOW_PRICE_COUNT" => "1",
 		"PRICE_VAT_INCLUDE" => "Y",
@@ -179,7 +196,8 @@ $ELEMENT_CNT = 30;
 		"ADD_PROPERTIES_TO_BASKET" => "Y",
 		"PRODUCT_PROPS_VARIABLE" => "prop",
 		"PARTIAL_PRODUCT_PROPERTIES" => "N",
-		"PRODUCT_PROPERTIES" => "",
+		"PRODUCT_PROPERTIES" => array(
+		),
 		"CACHE_TYPE" => "A",
 		"CACHE_TIME" => "36000000",
 		"CACHE_NOTES" => "",
@@ -197,7 +215,10 @@ $ELEMENT_CNT = 30;
 		"CONVERT_CURRENCY" => "N",
 		"AJAX_OPTION_JUMP" => "N",
 		"AJAX_OPTION_STYLE" => "Y",
-		"AJAX_OPTION_HISTORY" => "N"
-	)
+		"AJAX_OPTION_HISTORY" => "N",
+		"COMPONENT_TEMPLATE" => "view",
+		"AJAX_OPTION_ADDITIONAL" => "undefined"
+	),
+	false
 );?> </div>
  <?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

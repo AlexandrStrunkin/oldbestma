@@ -371,6 +371,7 @@ $YourID = $ElementID;$res = CIBlockElement::GetList(array(), array("ID" => $Your
 		"DISPLAY_COMPARE" => "N",
 		"SET_TITLE" => "Y",
 		"SET_STATUS_404" => "N",
+"SET_BROWSER_TITLE" => "N",
 		"PAGE_ELEMENT_COUNT" => "0",
 		"LINE_ELEMENT_COUNT" => "3",
 		"PROPERTY_CODE" => array("ARTICLE","CML2_ARTICLE","SIMILAR"),
