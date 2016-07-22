@@ -207,9 +207,35 @@ $(document).ready(function() {
         $(this).addClass("active");
         var radio = $(this).children().children("input:radio");
         $(radio).prop({"checked": true});
-    });
-});
+    });   
+    
+$('.skype').click(function()
+  {
+   $('#phone').attr('placeholder')
+   $('#phone').attr('placeholder', 'Укажите Ваш skype')
+   $('#phone').html('Укажите Ваш skype')
+  });
+  
+  $('.phone').click(function()
+  {
+   $('#phone').attr('placeholder')
+   $('#phone').attr('placeholder', 'Укажите Ваш номер телефона')
+   $('#phone').html('Укажите Ваш номер телефона')
+  // $("#phone").mask("+7(999) 999-9999");
+  });
+  
+  $('.icq').click(function()
+  {
+   $('#phone').attr('placeholder')
+   $('#phone').attr('placeholder', 'Укажите Ваш номер icq')
+   $('#phone').html('Укажите Ваш номер icq')
+  });
 
+    
+});
+   /*
 jQuery(function($){
    $("#phone").mask("+7(999) 999-9999");
    });
+   
+*/

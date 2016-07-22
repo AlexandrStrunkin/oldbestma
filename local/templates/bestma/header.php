@@ -118,12 +118,12 @@
                                 </li>
                                 <li class="case">
                                     <div class="skype">
-                                        <input type="radio" value="4" name="form_radio_SIMPLE_QUESTION_147" />
+                                        <input class="skype" type="radio" value="4" placeholder="Укажите Ваш skype" name="form_radio_SIMPLE_QUESTION_147" />
                                     </div>
                                 </li>
                                 <li class="case">
                                     <div class="icq">
-                                        <input type="radio" value="5" name="form_radio_SIMPLE_QUESTION_147" />
+                                        <input type="radio" value="5" placeholder="Укажите номер Вашего icq" name="form_radio_SIMPLE_QUESTION_147" />
                                     </div>
                                 </li>
                             </ul>
