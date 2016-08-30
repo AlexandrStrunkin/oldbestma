@@ -1,1 +1,1 @@
-<font size="2"><strong><font color="#ffffff">Оптовый интернет-магазин по продаже мобильных акссесуаров</font></strong></font>
+<span style="font-size: 13px;"><strong><span style="color: #ffffff;">Оптовый интернет-магазин по продаже мобильных аксессуаров</span></strong></span>

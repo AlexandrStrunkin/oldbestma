@@ -1,0 +1,335 @@
+table.form-table
+{
+	width:100%;
+	background-color:white;
+	border-collapse:collapse;
+	font-size:100%;
+	font-weight:normal;
+	line-height:160%;
+}
+
+table.form-table th, table.form-table td
+{
+	border:1px solid #ADC3D5;
+	padding: 5px 5px;
+	vertical-align:top;
+}
+
+table.form-table th
+{
+	background-image:url(/local/templates/bestma/images/table_head.gif);
+	background-repeat:repeat-x;
+	text-align: left;
+	color:#25639A;
+}
+
+
+table.form-table td
+{
+	padding: 15px 5px;
+}
+
+.form-required 
+{
+	color: red;
+}
+
+.error-fld {
+	display: block;
+	float: left;
+	height: 13px;
+	width: 15px;
+	background-repeat: no-repeat;
+	background-image: url(/local/templates/bestma/images/icon_warn.gif);
+}
+@charset "utf-8";
+div.w_form div.w_bg_callback {
+    background-image: url("/local/templates/bestma/images/bg_form_350px.png") !important;
+    height: 350px !important;
+    border-top-right-radius: 0px;
+}
+
+div.w_form div.w_bg_callback,
+div.w_form a.submit_callback {
+    box-shadow: 3px 3px 7px 0 rgba(0, 0, 0, 0.56);
+    position: relative;
+}
+
+div.w_form a.submit_callback,
+div.w_form a.submit_callback span,
+div.w_form div.w_bg_callback div.hidden_shadow {
+    display: block;
+    height: 31px;
+    line-height: 31px;
+}
+
+div.w_form a.submit_callback {
+    display: block;
+    float: right;
+    border-bottom-right-radius: 0px;
+    border-bottom-left-radius: 0px;
+    overflow: hidden;
+    background-image: url("/local/templates/bestma/images/contacts/callback_form/submit_bg_form.png");
+}
+
+div.w_form a.submit_callback span {
+    padding: 0px 12px 0px 27px;
+}
+
+div.w_form a.submit_callback span {
+    background-image: url("/local/templates/bestma/images/contacts/callback_form/phone.png");
+    background-repeat: no-repeat;
+    background-position: 10px center;
+
+}
+
+div.w_form div.w_bg_callback div.hidden_shadow {
+    height: 31px !important;
+    position: absolute;
+    right: 0px;
+    top: -31px;
+}
+
+div.w_form div.w_bg_callback div.hidden_shadow a.submit_callback {
+    box-shadow: none;
+}
+
+div.w_form div.w_bg_callback div.hidden_shadow a.submit_callback:active {
+    background-image: none;
+}
+
+div.w_form {
+    font-size: 14px !important;
+    color: #ffffff !important;
+}
+
+div.w_form a,
+div.w_form div.w_bg_callback div.hidden_shadow {
+    color: #ffffff !important;
+    text-decoration: none !important;
+    font-weight: bold !important;
+}
+
+div.w_form a:hover {
+    text-decoration: underline !important;
+}
+
+div.w_form div.head_inf {
+    font-weight: bold;
+    text-align: center;
+    padding: 15px 108px 9px 137px;
+}
+
+div.w_form div.w_fields {
+    margin: 0px 32px 0px 29px;
+    overflow: hidden;
+}
+
+div.w_form div.w_fields div.b_fields {
+    float: left;
+    min-height: 159px;
+}
+
+div.w_form div.w_fields div.b_fields.buyer_inf {
+    width: 216px !important;
+}
+
+div.w_form div.w_fields div.b_fields.contact_nubm {
+    width: 258px;
+    margin-bottom: 25px;
+}
+
+div.w_form div.w_fields div.b_fields.separator {
+    width: 25px;
+}
+
+
+div.w_form div.w_input {
+    margin-bottom: 13px;
+}
+
+div.w_form div.w_input div.w_label {
+    padding: 0px 3px 0px 3px;
+}
+
+div.w_form div.w_input div.w_input_field {
+    background-color: #dfdfdf;
+    border-top: 1px solid #626262;
+    border-left: 1px solid #626262;
+    border-radius: 8px; 
+    box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.40) inset;
+    padding: 6px 8px;
+    overflow: hidden;
+}
+
+div.w_form div.w_input:first-child div.w_input_field.text {
+    padding-left: 30px;
+    background-image: url("/local/templates/bestma/images/contacts/callback_form/name.png");
+    background-repeat: no-repeat;
+    background-position: 14px center;
+}
+
+div.w_form div.w_input div.w_input_field input,
+div.w_form div.w_input div.w_input_field textarea {
+    height: 18px;
+    font-size: 16px;
+    border: 0px;
+    display: block;
+    background: transparent;
+    color: #353D4A;
+    font-weight: bold;
+    resize: none;
+}
+
+div.w_form div.w_input div.w_input_field.textarea {
+    padding: 0px;
+}
+
+div.w_form div.w_input div.w_input_field.textarea textarea {
+    padding: 7px;
+}
+
+div.w_form div.w_input div.w_input_field.textarea textarea.question {
+    height: 57px;
+    width: 249px;
+}
+
+div.w_form div.w_input div.w_input_field.textarea.numb {
+    margin-top: 17px;
+    margin-left: -4px;
+}
+
+div.w_form div.w_input div.w_input_field.textarea textarea.numb {
+    width: 202px;
+    height: 125px;
+}
+
+div.w_form div.w_fields div.b_fields.w_switch {
+    width: 42px;
+    overflow: hidden;
+}
+
+div.w_form div.b_fields ul.switch {
+    margin-top: 22px;
+}
+
+div.w_form div.w_input div.w_input_field,
+div.w_form div.b_fields ul.switch li {
+    border-radius: 8px; 
+}
+
+div.w_form div.b_fields ul.switch li div,
+div.w_form div.b_fields ul.switch li {
+    height: 43px;
+    width: 40px;
+    background-position: center;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+div.w_form div.b_fields ul.switch li {
+    margin: 2px 0px;
+    background-color: #a3a7ad;
+    border-top-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+    box-shadow: -1px -1px 1px 0 rgba(0, 0, 0, 0.65) inset;
+}
+
+div.w_form div.b_fields ul.switch li:hover,
+div.w_form div.b_fields ul.switch li.active {
+    background-color: #1798ce;
+    box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.65) inset;
+    margin-left: 1px;
+}
+
+div.w_form div.b_fields ul.switch li div.phone {
+    background-image: url("/local/templates/bestma/images/contacts/callback_form/phone2.png");
+}
+
+div.w_form div.b_fields ul.switch li div.skype {
+    background-image: url("/local/templates/bestma/images/contacts/callback_form/skype.png");
+}
+
+div.w_form div.b_fields ul.switch li div.icq {
+    background-image: url("/local/templates/bestma/images/contacts/callback_form/icq.png");
+}
+
+div.w_form .hide_input input {
+    display: none;
+}
+
+div.w_form a.submit, input[name="web_form_submit"] {
+    display: block;
+    float: right;
+    margin: 0px 70px;
+    font-weight: normal !important;
+    margin-top: 50px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+div.w_form form {
+    display: none;
+}
+
+#blur_call_back {
+    display: none;
+    background-color: rgba(00, 00, 00, 0.8);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    z-index: 100501;
+}
+
+div.w_form.float {
+    width: 633px;
+    height: 281px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin: -140.5px 0px 0px -316.5px;
+    z-index: 100502;
+    /*    background-color: rgba(79, 87, 100, 0.5); */
+    display: none;
+}
+
+div.w_form.float form {
+    display: block;
+}
+
+div.w_form.float a.close {
+    color: #C80000 !important;
+    display: block;
+    float: left;
+    font-size: 10px;
+    font-weight: normal !important;
+    height: 15px;
+    line-height: 15px;
+    margin: 5px 11px;
+    overflow: hidden;
+}
+
+div.w_form form.active {
+    display: block;
+}
+.buyer_inf .w_input:nth-child(2) {
+    margin-bottom: 0;
+}
+.b_fields.captcha {
+    margin-top: -10px;
+}
+.w_input_field.captcha_field {
+    margin-top: 3px;
+}
+.w_input_field.captcha_field input {
+    width: 216px;
+}
+.b_fields.captcha img {
+    margin-left: 5px;
+}
+
+
+
+

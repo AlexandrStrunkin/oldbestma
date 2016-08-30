@@ -56,7 +56,7 @@
              //   arshow($arElement["DATE_CREATE"]);
         ?> 
             <?
-            if(date('d.m.Y G:i:s') < $date_new){
+            if(strtotime(date('d.m.Y G:i:s')) < strtotime($date_new)){
             
             $this->AddEditAction($arElement['ID'], $arElement['EDIT_LINK'], CIBlock::GetArrayByID($arParams["IBLOCK_ID"], "ELEMENT_EDIT"));
             $this->AddDeleteAction($arElement['ID'], $arElement['DELETE_LINK'], CIBlock::GetArrayByID($arParams["IBLOCK_ID"], "ELEMENT_DELETE"), array("CONFIRM" => GetMessage('CT_BCS_ELEMENT_DELETE_CONFIRM')));

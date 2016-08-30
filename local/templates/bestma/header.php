@@ -71,76 +71,48 @@
     </div>
 </div>
 <div id="float_call_back_form" class="w_form float">
-    <form class="cont" method="post" action="/callback/" name="SIMPLE_FORM_1" enctype="multipart/form-data">
-        <?= bitrix_sessid_post(); ?>
-        <input type="hidden" value="1" name="WEB_FORM_ID" />
-        <input type="hidden" value="Сохранить" name="web_form_submit" />
-        <a class="submit_callback" href="#"><span>Заказать обратный звонок</span></a>
-        <div class="clear"></div>
-        <div class="w_bg_callback">
-            <a href="#" class="close">Закрыть [X]</a>
-            <div class="hidden_shadow">
-                <a class="submit_callback" href="#"><span>Заказать обратный звонок</span></a>
-            </div> 
-            <div class="head_inf">
-                Мы перезвоним Вам в ближайшее время! С 10.00 до 19.00
-            </div>
-            <div class="w_fields">
-                <div class="b_fields buyer_inf">
-                    <div class="w_input">
-                        <div class="w_label">
-                            Как Вас зовут?
-                        </div>
-                        <div class="w_input_field name">
-                            <input type="text"  name="form_text_7" value="" />
-                        </div>
-                    </div>
-                    <div class="w_input">
-                        <div class="w_label">
-                            Вопрос или комментарий
-                        </div>
-                        <div class="w_input_field textarea">
-                            <textarea class="question" placeholder="Например: Как начать с Вами сотрудничать" name="form_text_8" cols="1" rows="1"></textarea>
-                        </div>
-                    </div>
-                </div>
-                <div class="b_fields separator">
-
-                </div>
-                <div class="b_fields contact_nubm">
-                    <div class="b_fields contact_nubm">
-                        <div class="b_fields w_switch hide_input">
-                            <ul class="switch">
-                                <li class="case active">
-                                    <div class="phone">
-                                        <input checked="checked" type="radio" value="3" name="form_radio_SIMPLE_QUESTION_147" />
-                                    </div>
-                                </li>
-                                <li class="case">
-                                    <div class="skype">
-                                        <input class="skype" type="radio" value="4" placeholder="Укажите Ваш skype" name="form_radio_SIMPLE_QUESTION_147" />
-                                    </div>
-                                </li>
-                                <li class="case">
-                                    <div class="icq">
-                                        <input type="radio" value="5" placeholder="Укажите номер Вашего icq" name="form_radio_SIMPLE_QUESTION_147" />
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="b_fields">
-                            <div class="w_input">
-                                <div class="w_input_field textarea numb">
-                                    <textarea class="numb" id="phone" placeholder="Укажите Ваш номер телефона" name="form_text_9" cols="1" rows="1"></textarea>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <a class="submit" href="#">Заказать звонок</a>
-        </div>
-    </form>
+    <?$APPLICATION->IncludeComponent("bitrix:form", "bestma_popup_call_request", Array(
+    "AJAX_MODE" => "N",    // Включить режим AJAX
+        "AJAX_OPTION_ADDITIONAL" => "",    // Дополнительный идентификатор
+        "AJAX_OPTION_HISTORY" => "N",    // Включить эмуляцию навигации браузера
+        "AJAX_OPTION_JUMP" => "N",    // Включить прокрутку к началу компонента
+        "AJAX_OPTION_STYLE" => "Y",    // Включить подгрузку стилей
+        "CACHE_TIME" => "3600",    // Время кеширования (сек.)
+        "CACHE_TYPE" => "A",    // Тип кеширования
+        "CHAIN_ITEM_LINK" => "",    // Ссылка на дополнительном пункте в навигационной цепочке
+        "CHAIN_ITEM_TEXT" => "",    // Название дополнительного пункта в навигационной цепочке
+        "COMPOSITE_FRAME_MODE" => "A",    // Голосование шаблона компонента по умолчанию
+        "COMPOSITE_FRAME_TYPE" => "AUTO",    // Содержимое компонента
+        "EDIT_ADDITIONAL" => "N",    // Выводить на редактирование дополнительные поля
+        "EDIT_STATUS" => "Y",    // Выводить форму смены статуса
+        "IGNORE_CUSTOM_TEMPLATE" => "N",    // Игнорировать свой шаблон
+        "NOT_SHOW_FILTER" => array(    // Коды полей, которые нельзя показывать в фильтре
+            0 => "",
+            1 => "",
+        ),
+        "NOT_SHOW_TABLE" => array(    // Коды полей, которые нельзя показывать в таблице
+            0 => "",
+            1 => "",
+        ),
+        "RESULT_ID" => $_REQUEST[RESULT_ID],    // ID результата
+        "SEF_MODE" => "N",    // Включить поддержку ЧПУ
+        "SHOW_ADDITIONAL" => "N",    // Показать дополнительные поля веб-формы
+        "SHOW_ANSWER_VALUE" => "N",    // Показать значение параметра ANSWER_VALUE
+        "SHOW_EDIT_PAGE" => "N",    // Показывать страницу редактирования результата
+        "SHOW_LIST_PAGE" => "N",    // Показывать страницу со списком результатов
+        "SHOW_STATUS" => "Y",    // Показать текущий статус результата
+        "SHOW_VIEW_PAGE" => "N",    // Показывать страницу просмотра результата
+        "START_PAGE" => "new",    // Начальная страница
+        "SUCCESS_URL" => "/callback/index.php",    // Страница с сообщением об успешной отправке
+        "USE_EXTENDED_ERRORS" => "N",    // Использовать расширенный вывод сообщений об ошибках
+        "WEB_FORM_ID" => "1",    // ID веб-формы
+        "COMPONENT_TEMPLATE" => "bestma_call_request",
+        "VARIABLE_ALIASES" => array(
+            "action" => "action",
+        )
+    ),
+    false
+);?>
 </div>
 <? //ФормаФормаФормаФормаФормаФорма?>
 <div class="root">

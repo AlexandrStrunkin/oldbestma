@@ -179,7 +179,7 @@ $(document).ready(function() {
     var closeButtonCB = "div.w_form.float a.close";
     var buttonFirstCallBack = "div.w_form a.gray_button.callback";
     var buttonSwitch = "div.w_form div.b_fields ul.switch li";
-    var formCallBack = "div.w_form form.cont";
+    var formCallBack = "div.w_form form";
     var submitButton = "div.w_bg_callback div.hidden_shadow a.submit_callback";
     var submitBotton_1 = "div.w_form a.submit";
 
@@ -196,41 +196,41 @@ $(document).ready(function() {
         return false;
     });
 
-    $(buttonFirstCallBack).click(function() {
+    /*$(buttonFirstCallBack).click(function() {
         $(this).hide();
         $(formCallBack).slideDown(350);
         return false;
-    });
-
+    }); */
+     
     $(buttonSwitch).click(function() {
         $(buttonSwitch).removeClass("active");
         $(this).addClass("active");
         var radio = $(this).children().children("input:radio");
         $(radio).prop({"checked": true});
-    });   
+    });
+  
     
 $('.skype').click(function()
   {
-   $('#phone').attr('placeholder')
-   $('#phone').attr('placeholder', 'Укажите Ваш skype')
+   $('#phone, textarea.numb').attr('placeholder')
+   $('#phone, textarea.numb').attr('placeholder', 'Укажите Ваш skype')
    $('#phone').html('Укажите Ваш skype')
   });
   
   $('.phone').click(function()
   {
-   $('#phone').attr('placeholder')
-   $('#phone').attr('placeholder', 'Укажите Ваш номер телефона')
+   $('#phone, textarea.numb').attr('placeholder')
+   $('#phone, textarea.numb').attr('placeholder', 'Укажите Ваш номер телефона')
    $('#phone').html('Укажите Ваш номер телефона')
   // $("#phone").mask("+7(999) 999-9999");
   });
   
   $('.icq').click(function()
   {
-   $('#phone').attr('placeholder')
-   $('#phone').attr('placeholder', 'Укажите Ваш номер icq')
+   $('#phone, textarea.numb').attr('placeholder')
+   $('#phone, textarea.numb').attr('placeholder', 'Укажите Ваш номер icq')
    $('#phone').html('Укажите Ваш номер icq')
   });
-
     
 });
    /*

@@ -83,6 +83,7 @@
             </div>
         </li>
     <? endforeach; // foreach($arResult["ITEMS"] as $arElement):  ?>
+    <?=$arResult['DESCRIPTION']?>
 </ul>
 <? if ($arParams["DISPLAY_BOTTOM_PAGER"]): ?>
     <br /><?= $arResult["NAV_STRING"] ?>
