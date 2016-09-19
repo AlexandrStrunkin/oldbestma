@@ -77,13 +77,13 @@ function addFilterDream1($stringNameKey) {
         if ($filter >= 0) {
             $prFilter["PROPERTY_" . toUpper($stringNameKey)] = $filter;
         }
-    } 
+    }
 }
 
 addFilterDream1("MANUFACTURER");
-?> 
+?>
 <h1 class="name">НОВИНКИ</h1>
- 
+
 <div class="filter_category_wrapp">
     <div class="filter_sort">
         <ul>
@@ -118,7 +118,7 @@ $ELEMENT_CNT = $_REQUEST['ELEMENT_CNT'];
 } else {
 $ELEMENT_CNT = 30;
 }
-?> 
+?>
 
  <?
   /*  $arSelect = Array("ID", "NAME", "created");
@@ -132,14 +132,20 @@ $ELEMENT_CNT = 30;
         $date_new = date('Y.m.d G:i:s', $t); # 10-Aug-2004
         arshow($date_new,true);
     } */
+  global $arrFilter;
   $curr_date = mktime(date('d.m.Y G:i:s'));
   $date_create_date = $curr_date - 1209600;
-  $arrFilter[">DATE_CREATE"] = date('d.m.Y G:i:s', $date_create_date);
-?> 
+
+  $arrFilter[] = array(
+        "LOGIC" => "OR",
+        array(">DATE_CREATE" => date('d.m.Y G:i:s', $date_create_date)),
+        array("!PROPERTY_SVEZHIE_POSTUPLENIYA" => false),
+    );
+?>
 
 <div> <?$APPLICATION->IncludeComponent(
-	"svc:catalog.section", 
-	"view", 
+	"bitrix:catalog.section",
+	"",
 	array(
 		"AJAX_MODE" => "N",
 		"IBLOCK_TYPE" => "catalog",
