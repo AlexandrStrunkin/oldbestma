@@ -137,13 +137,14 @@ class SVC
             }
         }
         echo "<pre>";
-        print_r($array);
+            print_r($array);
         echo "</pre>";
     }
-AddEventHandler("catalog", "OnBeforeProductUpdate", "NewsAddHeandler");
 
-// создаем обработчик события "OnBeforeIBlockElementUpdate"
-function NewsAddHeandler($ID, &$arFields) {
+AddEventHandler("catalog", "OnBeforeProductUpdate", "QuantityAddHeandler");
+
+// создаем обработчик события "OnBeforeProductUpdate"
+function QuantityAddHeandler($ID, &$arFields) {
 
     $element_quantity = CCatalogProduct::GetList(
             array("QUANTITY" => "DESC"),
@@ -169,8 +170,6 @@ function NewsAddHeandler($ID, &$arFields) {
                 ($element_quantity["QUANTITY"] > 0 && $element_quantity["QUANTITY"] < $arFields["QUANTITY"])) {
                 $quantity_new = '';
         }
-        arshow($quantity_new);
-
         CIBlockElement::SetPropertyValuesEx($ID, false, array("SVEZHIE_POSTUPLENIYA" => $quantity_new));  // обновляем элемент
     }
 
