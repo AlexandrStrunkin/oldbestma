@@ -9,8 +9,8 @@
   // */
 ?>
 <ul class="prod_tile items_pic">
-<? 
-$arResult["ITEMS"] = array_slice($arResult["ITEMS"],0, 6);
+<?
+//$arResult["ITEMS"] = array_slice($arResult["ITEMS"],0, 6);
 shuffle($arResult["ITEMS"]);
 $count = 0;
 ?>
@@ -46,7 +46,7 @@ $count = 0;
                 <a href="<?= $arElement["DETAIL_PAGE_URL"] ?>" class="img" style="background-image: url('<?=$arFileTmp["src"] /*$arElement["PREVIEW_PICTURE"]["SRC"]*/ ?>');"></a>
                 <img class="class_img_item_0620e44395b9ad45e489d15b3615c972" src="<?=$arFileTmp["src"] /*$arElement["PREVIEW_PICTURE"]["SRC"]*/ ?>" style="display: none;" alt="" />
             <? elseif (is_array($arElement["DETAIL_PICTURE"])): ?>
-                <a href="<?= $arElement["DETAIL_PAGE_URL"] ?>" class="img" style="background-image: url('<?=$arFileTmp["src"] /*$arElement["DETAIL_PICTURE"]["SRC"]*/ ?>');"></a>   
+                <a href="<?= $arElement["DETAIL_PAGE_URL"] ?>" class="img" style="background-image: url('<?=$arFileTmp["src"] /*$arElement["DETAIL_PICTURE"]["SRC"]*/ ?>');"></a>
                 <img class="class_img_item_0620e44395b9ad45e489d15b3615c972" src="<?=$arFileTmp["src"] /*$arElement["DETAIL_PICTURE"]["SRC"]*/ ?>" style="display: none;" alt="" />
             <? else: ?>
                 <a href="<?= $arElement["DETAIL_PAGE_URL"] ?>" class="img" style="background: transparent;"></a>
@@ -58,7 +58,7 @@ $count = 0;
 
                     <?
                     $count = count($arElement["PRICES"]);
-                    ?> 
+                    ?>
                     <?
                     if (isset($count) && $count >= 0):
                         foreach ($arElement["PRICES"] as $price_name => $price):
@@ -69,7 +69,7 @@ $count = 0;
                         endforeach;
                         unset($i);
                     endif;
-                    ?> 
+                    ?>
                 </div>
 
                 <div class="description"><a href="<?= $arElement["DETAIL_PAGE_URL"] ?>">описание товара</a></div>
@@ -79,7 +79,7 @@ $count = 0;
                     <input type="hidden" name="action" value="BUY" />
                     <label>
                         <input name="quantity" type="text" value="1" />
-                        <span>шт.</span> 
+                        <span>шт.</span>
 
                     </label>
                 </form>
