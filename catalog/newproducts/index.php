@@ -138,7 +138,7 @@ $ELEMENT_CNT = 30;
 
   $arrFilter[] = array(
         "LOGIC" => "OR",
-        array(">DATE_CREATE" => date('d.m.Y G:i:s', $date_create_date)),
+        array(">DATE_CREATE" => date('d.m.Y H:i:s', $date_create_date)),
         array("!PROPERTY_SVEZHIE_POSTUPLENIYA" => false),
     );
 ?>
@@ -175,7 +175,7 @@ $ELEMENT_CNT = 30;
 		"DISPLAY_COMPARE" => "N",
 		"SET_TITLE" => "Y",
 		"SET_STATUS_404" => "N",
-		"PAGE_ELEMENT_COUNT" => '25',
+		"PAGE_ELEMENT_COUNT" => '999',
 		"LINE_ELEMENT_COUNT" => "25",
 		"PROPERTY_CODE" => array(
 			0 => "ARTICLE",

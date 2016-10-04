@@ -1,6 +1,6 @@
 <?
 require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/header.php");
-$APPLICATION->SetTitle("Аксессуары для сотовых телефонов оптом - BESTMA");    
+$APPLICATION->SetTitle("Аксессуары для сотовых телефонов оптом - BESTMA");
 ?> <?$APPLICATION->IncludeComponent(
     "bitrix:news.list",
     "slider",
@@ -58,54 +58,54 @@ $APPLICATION->SetTitle("Аксессуары для сотовых телефо�
         "EDIT_TEMPLATE" => ""
     )
 );?> <? th_out("ПОПУЛЯРНЫЕ ТОВАРЫ:"); ?>   <?$APPLICATION->IncludeComponent(
-	"bitrix:catalog.top", 
-	"scroll_top", 
-	array(
-		"IBLOCK_TYPE" => "catalog",
-		"IBLOCK_ID" => "3",
-		"ELEMENT_SORT_FIELD" => "shows",
-		"ELEMENT_SORT_ORDER" => "desc",
-		"ELEMENT_SORT_FIELD2" => "shows",
-		"ELEMENT_SORT_ORDER2" => "desc",
-		"FILTER_NAME" => "",
-		"SECTION_URL" => "",
-		"DETAIL_URL" => "",
-		"SECTION_ID_VARIABLE" => "SECTION_ID",
-		"DISPLAY_COMPARE" => "N",
-		"ELEMENT_COUNT" => "18",
-		"LINE_ELEMENT_COUNT" => "9",
-		"PROPERTY_CODE" => array(
-			0 => "ARTICLE",
-			1 => "CML2_ARTICLE",
-			2 => "",
-		),
-		"OFFERS_LIMIT" => "5",
-		"PRICE_CODE" => array(
-			0 => "PRICE_WHS_1",
-			1 => "PRICE_WHS_2",
-			2 => "PRICE_WHS_3",
-		),
-		"USE_PRICE_COUNT" => "N",
-		"SHOW_PRICE_COUNT" => "1",
-		"PRICE_VAT_INCLUDE" => "Y",
-		"BASKET_URL" => "/cart/",
-		"ACTION_VARIABLE" => "action",
-		"PRODUCT_ID_VARIABLE" => "id",
-		"USE_PRODUCT_QUANTITY" => "Y",
-		"PRODUCT_QUANTITY_VARIABLE" => "quantity",
-		"ADD_PROPERTIES_TO_BASKET" => "Y",
-		"PRODUCT_PROPS_VARIABLE" => "prop",
-		"PARTIAL_PRODUCT_PROPERTIES" => "N",
-		"PRODUCT_PROPERTIES" => array(
-		),
-		"CACHE_TYPE" => "A",
-		"CACHE_TIME" => "3600",
-		"CACHE_FILTER" => "N",
-		"CACHE_GROUPS" => "Y",
-		"HIDE_NOT_AVAILABLE" => "Y",
-		"CONVERT_CURRENCY" => "N",
-		"COMPONENT_TEMPLATE" => "scroll_top",
-		"SEF_MODE" => "N"
-	),
-	false
+    "bitrix:catalog.top",
+    "scroll_top",
+    array(
+        "IBLOCK_TYPE" => "catalog",
+        "IBLOCK_ID" => "3",
+        "ELEMENT_SORT_FIELD" => "shows",
+        "ELEMENT_SORT_ORDER" => "desc",
+        "ELEMENT_SORT_FIELD2" => "shows",
+        "ELEMENT_SORT_ORDER2" => "desc",
+        "FILTER_NAME" => "",
+        "SECTION_URL" => "",
+        "DETAIL_URL" => "",
+        "SECTION_ID_VARIABLE" => "SECTION_ID",
+        "DISPLAY_COMPARE" => "N",
+        "ELEMENT_COUNT" => "18",
+        "LINE_ELEMENT_COUNT" => "9",
+        "PROPERTY_CODE" => array(
+            0 => "ARTICLE",
+            1 => "CML2_ARTICLE",
+            2 => "",
+        ),
+        "OFFERS_LIMIT" => "5",
+        "PRICE_CODE" => array(
+            0 => "PRICE_WHS_1",
+            1 => "PRICE_WHS_2",
+            2 => "PRICE_WHS_3",
+        ),
+        "USE_PRICE_COUNT" => "N",
+        "SHOW_PRICE_COUNT" => "1",
+        "PRICE_VAT_INCLUDE" => "Y",
+        "BASKET_URL" => "/cart/",
+        "ACTION_VARIABLE" => "action",
+        "PRODUCT_ID_VARIABLE" => "id",
+        "USE_PRODUCT_QUANTITY" => "Y",
+        "PRODUCT_QUANTITY_VARIABLE" => "quantity",
+        "ADD_PROPERTIES_TO_BASKET" => "Y",
+        "PRODUCT_PROPS_VARIABLE" => "prop",
+        "PARTIAL_PRODUCT_PROPERTIES" => "N",
+        "PRODUCT_PROPERTIES" => array(
+        ),
+        "CACHE_TYPE" => "A",
+        "CACHE_TIME" => "3600",
+        "CACHE_FILTER" => "N",
+        "CACHE_GROUPS" => "Y",
+        "HIDE_NOT_AVAILABLE" => "Y",
+        "CONVERT_CURRENCY" => "N",
+        "COMPONENT_TEMPLATE" => "scroll_top",
+        "SEF_MODE" => "N"
+    ),
+    false
 );?> <? require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/footer.php"); ?>
