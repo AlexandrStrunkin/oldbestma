@@ -108,4 +108,5 @@ $APPLICATION->SetTitle("Аксессуары для сотовых телефо�
         "SEF_MODE" => "N"
     ),
     false
-);?> <? require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/footer.php"); ?>
+);?>
+<? require($_SERVER["DOCUMENT_ROOT"] . "/bitrix/footer.php"); ?>
