@@ -45,7 +45,7 @@
         <? endforeach; ?>
     </ul>
     <div class="arh_news">
-        <a href="<?= str_replace("#SITE_DIR#", "",$arResult["LIST_PAGE_URL"]); ?>">АРХИВ НОВОСТЕЙ</a>
+        <a href="<?= str_replace("/", "",$arResult["LIST_PAGE_URL"]); ?>">АРХИВ НОВОСТЕЙ</a>
     </div>
 </div>
 <? if ($arParams["DISPLAY_BOTTOM_PAGER"]): ?>

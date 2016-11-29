@@ -133,16 +133,16 @@ $ELEMENT_CNT = 30;
         arshow($date_new,true);
     } */
   global $arrFilter;
-  $curr_date = mktime(date('d.m.Y G:i:s'));
-  $date_create_date = $curr_date - 1209600;
+  $curr_date = date('U');
+  $date_create_date = $curr_date - (604800 * 4);
 
   $arrFilter[] = array(
         "LOGIC" => "OR",
-        array(">DATE_CREATE" => date('d.m.Y H:i:s', $date_create_date)),
+        array(">=DATE_CREATE" => date('d.m.Y', $date_create_date)),
         array("!PROPERTY_SVEZHIE_POSTUPLENIYA" => false),
     );
 ?>
-
+  <?//arshow(date('d.m.Y', $curr_date))?>
 <div> <?$APPLICATION->IncludeComponent(
 	"bitrix:catalog.section",
 	"",
@@ -175,7 +175,7 @@ $ELEMENT_CNT = 30;
 		"DISPLAY_COMPARE" => "N",
 		"SET_TITLE" => "Y",
 		"SET_STATUS_404" => "N",
-		"PAGE_ELEMENT_COUNT" => '999',
+		"PAGE_ELEMENT_COUNT" => '100',
 		"LINE_ELEMENT_COUNT" => "25",
 		"PROPERTY_CODE" => array(
 			0 => "ARTICLE",

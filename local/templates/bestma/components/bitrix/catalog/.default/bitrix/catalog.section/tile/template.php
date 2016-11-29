@@ -82,9 +82,9 @@
                 </form>
             </div>
         </li>
-    <? endforeach; // foreach($arResult["ITEMS"] as $arElement):  ?>
-    <?=$arResult['DESCRIPTION']?>
+    <? endforeach; // foreach($arResult["ITEMS"] as $arElement):  ?> 
 </ul>
+<?=$arResult['DESCRIPTION']?>
 <? if ($arParams["DISPLAY_BOTTOM_PAGER"]): ?>
     <br /><?= $arResult["NAV_STRING"] ?>
 <? endif; ?>
